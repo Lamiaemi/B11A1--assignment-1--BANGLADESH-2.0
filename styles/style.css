@@ -193,6 +193,34 @@ main {
     border-radius: 16px;
     background: rgb(247, 235, 207);
 }
+/* quote section styles */
+.quote-section {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 48px 24px 48px 24px;
+    background-image: url("../assets/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    margin-bottom: 80px;
+}
+.quote-description {
+    color: rgba(14, 14, 14, 0.8);
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+.cards-title {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 20px;
+    font-weight: 600;
+}
+.chief-adviser {
+    color: rgba(14, 14, 14, 0.6);
+     font-size: 16px;
+    font-weight: 400;
+}
 /* News styles */
 .section-subtitle {
     color: rgba(14, 14, 14, 0.8);
@@ -213,7 +241,6 @@ main {
     gap: 32px;
     background: rgb(255, 255, 255);
 }
-
 .box-btn {
     border: none;
     padding: 13px 26px 13px 26px;
@@ -296,7 +323,7 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
-/* support section styles */
+/* subscribe section styles */
 .subscribe-section {
     padding: 80px 100px 80px 100px;
     margin-bottom: 80px;
@@ -338,8 +365,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10;
-
 }
 
 .input-box input[type="submit"] {

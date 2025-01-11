@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     font-family: "Fira Sans", serif;
+    background: rgb(245, 245, 245);
 }
 * {
     margin: 0;
     padding: 0;
+}
+button, a {
+    cursor: pointer;
+}
+/* main style */
+main {
+    width: 80%;
+    margin: auto;
 }
 /* shared styles */
 .text-primary {
@@ -13,7 +22,7 @@ body {
     font-weight: 700;
     line-height: 38px;
 }
-.btn {
+.btn-primary {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
@@ -22,6 +31,27 @@ body {
     border-radius: 8px;
     background: rgb(0, 106, 80);
     border: none;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    opacity: .8;
+}
+.btn-primary:active {
+    opacity: .9;
+}
+.section-title {
+    color: rgb(14, 14, 14);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.content-description {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 32px 0px;
 }
 /* nav styles */
 .navbar {
@@ -41,6 +71,11 @@ body {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+.sign-in-btn:hover {
+    opacity: .8;
 }
 /* banner styles */
 .banner-container {
@@ -74,4 +109,191 @@ body {
     line-height: 67px;
     width: 622px;
     margin: 16px 0px;
+}
+/* Future-vision-section styles */
+.Future-vision {
+    margin: 80px 0px;
+}
+
+.cards-title {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.card-container {
+    display: flex;
+    gap: 24px;
+}
+.card-container a {
+    transition-duration: 0.15s;
+}
+.card-container a:hover {
+    opacity: .8;
+}
+
+.card-container .card1,
+.card2,
+.card3 {
+    padding: 32px;
+    width: 410.67px;
+}
+
+.card1 a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgb(84, 144, 245);
+    padding: 11px 20px 11px 20px;
+    text-decoration: none;
+}
+.card2 a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgb(9, 161, 92);
+    padding: 11px 20px 11px 20px;
+    text-decoration: none;
+}
+.card3 a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: left;
+    border-radius: 8px;
+    background: rgb(255, 194, 57);
+    padding: 11px 20px 11px 20px;
+    text-decoration: none;
+}
+
+.card-container .card1 {
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: rgba(84, 144, 245, 0.2);
+}
+
+.card-container .card2 {
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: rgb(198, 228, 214);
+}
+
+.card-container .card3 {
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: rgb(247, 235, 207);
+}
+/* News styles */
+.section-subtitle {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+        
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 48px;
+    border-radius: 24px;
+    gap: 32px;
+    background: rgb(255, 255, 255);
+}
+
+.box-btn {
+    border: none;
+    padding: 13px 26px 13px 26px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    transition-duration: 0.15s;
+}
+.box-btn:hover {
+    opacity: .8;
+}
+.box-btn:active {
+    opacity: .9;
+}
+.box-img {
+    border-radius: 24px;
+    width: 425px;
+    height: 346px;
+}
+/* donate-section styles */
+.donate-section {
+    text-align: center;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin: 80px 0px;
+}
+.donate-buttons {
+    display: flex;
+    gap: 24px;
+}
+.donate-btn1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(198, 228, 214);
+    padding: 40px;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 40px;
+    font-weight: 700;
+}
+.donate-btn {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 40px;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 40px;
+    font-weight: 700;
+}
+.donate-btn:hover {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(198, 228, 214);
+    padding: 40px;
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 40px;
+    font-weight: 700;
+}
+.amount-area {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgb(255, 255, 255);
+    padding: 20px 40px 20px 40px;
+    width: 1032px;
+    text-align: center;
+    margin: 32px 0px;
+}
+.input-area {
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
 }
